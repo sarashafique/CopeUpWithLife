@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width:fit-content;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top:0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; 
+} 
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:2px 298px 55px 280px;
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('/back4.jpg') no-repeat center center/cover;
+    padding: 2px 0px 188px 0px;
+    height: 600px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+#contents {
+    margin: 34px;
+    display:inline-block;
+}
+#contents .box{
+    border: 3px solid black;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background:darkgray;
+    margin-bottom: 20px;
+    
+}
+#contents .box:hover{
+    background-color:grey;
+    cursor: pointer;
+}
+
+
+#contents .box img{ 
+    height: 160px;
+    margin: auto;
+    display: block;
+ }
+ 
+ #contents .box h2{
+     font-size: rem;
+     color: black;
+ }
+ #contents .box p{
+     font-family: 'Bree Serif', serif;
+      color: black;
+      font-size: 1.5rem;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }  
+ #contact{
+    position: relative;
+ }
+ #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url("/back7.jpeg") no-repeat center center/cover;
+   
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+#about{
+    margin: 34px;
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        display: block;
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #about p{
+       align-items: center; 
+       width: 100%;
+    }
+}
+
+#about img{ 
+   height: 300px;
+   width: 250px;
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+#about p{
+    font-family: 'Bree Serif', serif;
+    border: 2px solid rgb(20, 218, 218);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
