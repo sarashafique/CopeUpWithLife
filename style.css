@@ -76,7 +76,7 @@ html{
 #home::before{ 
     content: "";
     position: absolute;
-    background: url('/back4.jpg') no-repeat center center/cover;
+    background: url('back4.jpg') no-repeat center center/cover;
     padding: 2px 0px 188px 0px;
     height: 600px;
     width: 100%;
@@ -144,7 +144,7 @@ html{
     height: 100%;
     z-index: -1;
     opacity: 0.8;
-    background: url("/back7.jpeg") no-repeat center center/cover;
+    background: url("back7.jpeg") no-repeat center center/cover;
    
 }
 #contact-box{
