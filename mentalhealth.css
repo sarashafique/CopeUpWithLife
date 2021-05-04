@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #home{
     background: url('mental1.jpg') no-repeat center center/cover;
     align-items: center;
